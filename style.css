@@ -22,9 +22,21 @@ img {
   height: 50px;
 }
 
+img:hover {
+  filter: invert(13%) sepia(26%) saturate(7464%) hue-rotate(237deg) brightness(38%) contrast(105%);
+}
+
 @media (prefers-color-scheme: dark) {
   body {
     color: #c9d1d9;
     background: #111;
+  }
+
+  img {
+    filter: invert(83%) sepia(9%) saturate(212%) hue-rotate(169deg) brightness(102%) contrast(86%);
+  }
+
+  img:hover {
+    filter: invert(38%) sepia(72%) saturate(439%) hue-rotate(48deg) brightness(71%) contrast(96%);
   }
 }
